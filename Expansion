@@ -1,0 +1,16 @@
+1. To expand the Comment:
+
+document.querySelectorAll('a, button, span, div, *[role="button"]').forEach(element => {
+  if (/see\s*more/i.test(element.textContent)) {
+    element.click();
+  }
+});
+
+
+2. To Load reply:
+
+document.querySelectorAll('a, button, span, div, *[role="button"]').forEach(element => {
+  if (/replie/i.test(element.textContent)) {
+    element.click();
+  }
+});
